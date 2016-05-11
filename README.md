@@ -48,7 +48,6 @@ public class Main {
     }
 }
 
-package com.company;
 
 /**
  */
@@ -69,7 +68,6 @@ public class User {
 
     }
 
-package com.company;
 
 /**
  */
@@ -92,7 +90,6 @@ public class Products {
     }
 }
 
-package com.company;
 
 /**
  */
