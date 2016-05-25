@@ -17,7 +17,7 @@
 4. Северінчик Олександра.
 
 #UML – diagram
-(https://drive.google.com/open?id=0BxThNddPcxCQcnZ1cHk2YndqQjQ)
+(https://drive.google.com/file/d/0BxThNddPcxCQU2hqRDFITTRtUWs/view?usp=sharing)
 
 #Sketch Product
 (https://drive.google.com/open?id=0BxThNddPcxCQTDhMYndMQTMwUTg)
