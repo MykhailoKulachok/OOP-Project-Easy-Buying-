@@ -35,22 +35,42 @@ public class Main {
         String People = User1.getInfo();
         System.out.println(People);
 
-        Products Prod1 = new Products("Potato", "Podilski Tomato", 45d, 67.84);
+        Product Prod1 = new Product("Potato", "Podilski Tomato", 45d);
 
         String ProdRecord = Prod1.getProducts();
         System.out.println(ProdRecord);
 
-        Shops Shop1 = new Shops("Mega Market","Kovalski, 8", 1253d, 345.7d);
+        Shop Shop1 = new Shop("Mega Market","Kovalski, 8", 1253d, 345.7d);
 
         String SRecord = Shop1.getShopRecord();
         System.out.println(SRecord);
+
+        Marker Marker1 = new Marker("Prostokvashino");
+
+        String Mark = Marker1.getNameMarker();
+        System.out.println(Mark);
+
+        
 
     }
 }
 
 
-/**
- */
+public class Marker {
+    String NameMarker;
+
+    Marker (String NameMarker){
+        this.NameMarker = NameMarker;
+    }
+
+    public  String getNameMarker(){
+        String Mark = "Marker is: " + NameMarker;
+        return  Mark;
+    }
+}
+
+
+
 public class User {
 
     String firstName;
@@ -69,37 +89,43 @@ public class User {
     }
 
 
-/**
- */
-public class Products {
+
+public class Product {
     String NameProduct;
     String Brand;
     Double Number;
-    Double Price;
 
-    Products(String NameProducts, String Brand, Double Number, Double Price){
+    Product(String NameProducts, String Brand, Double Number){
         this.NameProduct = NameProducts;
         this.Brand = Brand;
         this.Number = Number;
-        this.Price = Price;
     }
 
     public String getProducts() {
-        String ProdRecord = "First Product: " +NameProduct + ", " + Brand + ", " + Number + ", " + Price + "grn";
+        String ProdRecord = "First Product: " +NameProduct + ", " + Brand + ", " + Number;
         return  ProdRecord;
     }
 }
 
 
-/**
- */
-public class Shops {
+public class ProductPrice extends Product {
+    ProductPrice(String NameProducts, String Brand, Double Number) {
+        super(NameProducts, Brand, Number);
+    }
+    public void Price (Double price){
+        System.out.println(price+" grn");
+    }
+}
+
+
+
+public class Shop {
     String SName;
     Double Distance;
     String Address;
     Double TPrice;
 
-    Shops (String SName, String Address, Double Distance, Double TPrice) {
+    Shop (String SName, String Address, Double Distance, Double TPrice) {
         this.SName = SName;
         this.Address = Address;
         this.Distance = Distance;
